@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Эксклюзивный дом у моря в Мысхако. 363м² премиум-класса. Вид на море и горы. 80м до моря. От собственника.">
+    <title>Эксклюзивный Дом у Моря | Мысхако | 363м² Премиум-Класс</title>
+    
+    <!-- DMP.one - код идентификации посетителей -->
+    <script type="text/javascript">
+        window.dmp_settings = {
+            dmp_id: "ВАШ_ID_КАБИНЕТА_DMP", // Замените на ваш ID из кабинета DMP.one
+            dmp_host: "dmp.one"
+        };
+        (function() {
+            var dmp = document.createElement('script');
+            dmp.type = 'text/javascript';
+            dmp.async = true;
+            dmp.src = 'https://cdn.dmp.one/dmp.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(dmp, s);
+        })();
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-dark: #1a1a2e;
+            --secondary-dark: #16213e;
+            --accent-gold: #d4af37;
+            --accent-gold-light: #f4e5b5;
+            --text-light: #e8e8e8;
+            --text-muted: #a0a0a0;
+            --white: #ffffff;
+            --bg-light: #f8f9fa;
+            --bg-dark: #0f0f1e;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text-light);
+            background: var(--bg-dark);
+        }
+        
+        /* Шапка */
+        header {
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--accent-gold);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+        }
+        
+        .header-phone {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .header-phone:hover {
+            color: var(--accent-gold-light);
+            transform: scale(1.05);
+        }
+        
+        /* Главный экран */
+        .hero {
+            margin-top: 70px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(15, 15, 30, 0.9) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a2e" width="1200" height="800"/><text fill="%23d4af37" font-size="60" x="50%" y="50%" text-anchor="middle" font-family="Georgia">Фото дома у моря</text></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.5) 100%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 2rem;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent-gold-light);
+            font-style: italic;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            text-align: center;
+        }
+        
+        .hero-feature-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            display: block;
+        }
+        
+        .hero-feature-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .price-tag {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            margin: 2rem 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid var(--accent-gold);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-gold);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Секции */
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+            font-weight: normal;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+            font-style: italic;
+        }
+        
+        /* Локация */
+        .location {
+            background: var(--secondary-dark);
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .location-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .location-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+        
+        .location-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .location-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .location-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+        
+        /* Этажи */
+        .floors {
+            background: var(--bg-dark);
+        }
+        
+        .floor-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+        }
+        
+        .floor-title {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .floor-number {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .floor-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .floor-feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .floor-feature-title {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .floor-feature-text {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        /* Преимущества */
+        .advantages {
+            background: var(--secondary-dark);
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .advantage-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .advantage-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+        
+        .advantage-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .advantage-title {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .advantage-text {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        /* Галерея */
+        .gallery {
+            background: var(--bg-dark);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 16/10;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Форма захвата */
+        .lead-form-section {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            position: relative;
+        }
+        
+        .lead-form-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23d4af37" opacity="0.1"/></svg>');
+            background-size: 50px 50px;
+            opacity: 0.3;
+        }
+        
+        .lead-form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .form-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--accent-gold);
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1.2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1.5rem;
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .submit-btn:hover {
+            background: var(--accent-gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        .form-note {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        /* Контакты */
+        .contacts {
+            background: var(--secondary-dark);
+        }
+        
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-value {
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Футер */
+        footer {
+            background: var(--bg-dark);
+            color: var(--text-muted);
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        /* Плавающая кнопка */
+        .floating-phone {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+            cursor: pointer;
+            z-index: 999;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 4px 30px rgba(212, 175, 55, 0.8);
+            }
+        }
+        
+        .floating-phone:hover {
+            background: var(--accent-gold-light);
+            transform: scale(1.15);
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .price-tag {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-features {
+                gap: 1.5rem;
+            }
+            
+            .hero-feature-value {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .floor-item {
+                padding: 2rem;
+            }
+            
+            .form-box {
+                padding: 2rem;
+            }
+        }
+        
+        /* Модальное окно */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: var(--secondary-dark);
+            padding: 3rem;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            border: 2px solid var(--accent-gold);
+        }
+        
+        .modal-close {
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .modal-close:hover {
+            background: var(--accent-gold-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🏛️ ОСОБНЯК У МОРЯ</div>
+                <a href="tel:+7XXXXXXXXXX" class="header-phone" data-dmp-event="phone_click">
+                    📞 <span>+7 (XXX) XXX-XX-XX</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✨ Эксклюзивное предложение</div>
+            <h1>Дом у Моря в Мысхако</h1>
+            <p class="hero-subtitle">Ваш личный курорт на Черноморском побережье</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span class="hero-feature-value">363 м²</span>
+                    <span class="hero-feature-label">Площадь дома</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="hero-feature-value">80 м</span>
+                    <span class="hero-feature-label">До моря</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="hero-feature-value">6 соток</span>
+                    <span class="hero-feature-label">Участок</span>
+                </div>
+            </div>
+            
+            <div class="price-tag">Цена по запросу</div>
+            
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary" data-dmp-event="cta_call">📞 Позвонить</a>
+                <a href="#form" class="btn btn-secondary" data-dmp-event="cta_form">✉️ Записаться на просмотр</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Локация -->
+    <section class="location">
+        <div class="container">
+            <h2 class="section-title">Идеальное Расположение</h2>
+            <p class="section-subtitle">Мысхако — самый престижный район Новороссийска</p>
+            
+            <div class="location-grid">
+                <div class="location-card">
+                    <div class="location-icon">🌊</div>
+                    <div class="location-value">80 м</div>
+                    <div class="location-label">До моря</div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">🏖️</div>
+                    <div class="location-value">350 м</div>
+                    <div class="location-label">До пляжа</div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">🏪</div>
+                    <div class="location-value">5-10 мин</div>
+                    <div class="location-label">Инфраструктура</div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">🌳</div>
+                    <div class="location-value">Экология</div>
+                    <div class="location-label">Чистый воздух</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Этажи -->
+    <section class="floors">
+        <div class="container">
+            <h2 class="section-title">Планировка Особняка</h2>
+            <p class="section-subtitle">363 м² безупречного дизайна + 180 м² террас</p>
+            
+            <!-- 0 этаж -->
+            <div class="floor-item">
+                <div class="floor-title">
+                    <div class="floor-number">0</div>
+                    <span>Приватная Зона SPA и Фитнеса</span>
+                </div>
+                <div class="floor-features">
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🧖 SPA-Комплекс</div>
+                        <div class="floor-feature-text">Большая сауна с отделкой из липы и абаша. Подогреваемый бассейн 9 м³ (глубина 1,5 м)</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🚗 Гараж</div>
+                        <div class="floor-feature-text">На две машины с автоматическими воротами</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🔧 Технические помещения</div>
+                        <div class="floor-feature-text">Котельная и хозпомещение</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🏗️ Конструкция</div>
+                        <div class="floor-feature-text">Фундамент-плита, армированные бетонные стены 40 см</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 1 этаж -->
+            <div class="floor-item">
+                <div class="floor-title">
+                    <div class="floor-number">1</div>
+                    <span>Пространство для Гостеприимства</span>
+                </div>
+                <div class="floor-features">
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🛋️ Гостиная</div>
+                        <div class="floor-feature-text">Панорамные окна с видом на море. Паркетная доска (Бельгия). Роскошный кожаный диван Möbеl&Zеit</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">👨‍🍳 Кухня Шеф-Повара</div>
+                        <div class="floor-feature-text">Вся встроенная техника SMEG (Италия). Французская декоративная штукатурка</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">💪 Тренажерный зал</div>
+                        <div class="floor-feature-text">Отдельный, полностью оборудованный зал</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🎨 Отделка</div>
+                        <div class="floor-feature-text">Стильные бумажные обои (США). Дизайн-проект "ВОN-ТОN"</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2 этаж -->
+            <div class="floor-item">
+                <div class="floor-title">
+                    <div class="floor-number">2</div>
+                    <span>Ваш Приватный Мир</span>
+                </div>
+                <div class="floor-features">
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🛏️ Три Спальни</div>
+                        <div class="floor-feature-text">Эксклюзивная итальянская мебель. У каждой спальни своя терраса</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🌅 Панорамные Виды</div>
+                        <div class="floor-feature-text">Из каждой спальни вид на Море и Горы одновременно. Конфигурация "Кресло Дракона" по Фэншуй</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">☀️ Свет и Воздух</div>
+                        <div class="floor-feature-text">Эркерное витражное исполнение окон. Максимум естественного света</div>
+                    </div>
+                    <div class="floor-feature">
+                        <div class="floor-feature-title">🏞️ Террасы</div>
+                        <div class="floor-feature-text">Приватные террасы у каждой спальни для утреннего кофе с видом на море</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Премиальное Оснащение</h2>
+            <p class="section-subtitle">Формула «Заезжай и Живи»</p>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">🛡️</div>
+                    <div class="advantage-title">Максимальная Безопасность</div>
+                    <div class="advantage-text">Окна RЕНАU (линейка BRILLIANTS-Design) с двойными стеклопакетами. Бронированные стекла на первом этаже и цоколе. Охранная сигнализация с тревожной кнопкой</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🎨</div>
+                    <div class="advantage-title">Эксклюзивный Дизайн</div>
+                    <div class="advantage-text">Дизайн-проект известной фирмы "ВОN-ТОN". Безупречный вкус, гармония материалов, высочайшее качество исполнения</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🏆</div>
+                    <div class="advantage-title">Премиальные Материалы</div>
+                    <div class="advantage-text">Итальянская мебель, бельгийский паркет, американские обои, французская штукатурка, техника SMEG</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🌊</div>
+                    <div class="advantage-title">Вид на Море и Горы</div>
+                    <div class="advantage-text">Захватывающий, ничем не перекрываемый вид. Вторая береговая линия. Просыпайтесь под шум прибоя</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🧖</div>
+                    <div class="advantage-title">Личный SPA-Комплекс</div>
+                    <div class="advantage-text">Сауна из липы и абаша. Подогреваемый бассейн 9 м³. Ваше место для отдыха и оздоровления круглый год</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">📜</div>
+                    <div class="advantage-title">Готовность к Сделке</div>
+                    <div class="advantage-text">От собственника. Прямая продажа. Все документы готовы. Без обременений</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Фотографии Особняка</h2>
+            <p class="section-subtitle">Увидьте этот шедевр своими глазами</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('Фасад дома')">📷 Фасад дома</div>
+                <div class="gallery-item" onclick="openModal('Вид на море')">📷 Вид на море</div>
+                <div class="gallery-item" onclick="openModal('Гостиная 1 этаж')">📷 Гостиная</div>
+                <div class="gallery-item" onclick="openModal('Кухня SMEG')">📷 Кухня</div>
+                <div class="gallery-item" onclick="openModal('Спальня с террасой')">📷 Спальня</div>
+                <div class="gallery-item" onclick="openModal('SPA-зона с бассейном')">📷 SPA-зона</div>
+                <div class="gallery-item" onclick="openModal('Тренажерный зал')">📷 Тренажерный зал</div>
+                <div class="gallery-item" onclick="openModal('Терраса с видом')">📷 Терраса</div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-muted); font-style: italic;">
+                💡 Замените заглушки на реальные фотографии вашего особняка
+            </p>
+        </div>
+    </section>
+
+    <!-- Форма захвата -->
+    <section class="lead-form-section" id="form">
+        <div class="container">
+            <div class="lead-form-container">
+                <h2 class="section-title">Запишитесь на Эксклюзивный Просмотр</h2>
+                <p class="section-subtitle">Оставьте заявку и я лично покажу вам этот шедевр</p>
+                
+                <div class="form-box">
+                    <form id="leadForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Ваше Имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__" data-dmp-event="form_phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Для отправки дополнительных материалов">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Удобное время для звонка</label>
+                            <textarea id="message" name="message" placeholder="Например: завтра после 15:00"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-dmp-event="form_submit">
+                            🏛️ Записаться на просмотр
+                        </button>
+                        
+                        <p class="form-note">
+                            🔒 Ваши данные защищены. Показ только по предварительной записи.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с Собственником</h2>
+            <p class="section-subtitle">Прямая продажа. Без посредников.</p>
+            
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-label">Телефон</div>
+                    <a href="tel:+7XXXXXXXXXX" class="contact-value" data-dmp-event="contact_phone">+7 (XXX) XXX-XX-XX</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-label">WhatsApp</div>
+                    <a href="https://wa.me/7XXXXXXXXXX" class="contact-value" target="_blank" data-dmp-event="contact_whatsapp">Написать</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✈️</div>
+                    <div class="contact-label">Telegram</div>
+                    <a href="https://t.me/XXXXXXXXX" class="contact-value" target="_blank" data-dmp-event="contact_telegram">@username</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:your@email.ru" class="contact-value" data-dmp-event="contact_email">your@email.ru</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem;">🏛️ ОСОБНЯК У МОРЯ</p>
+            <p>&copy; 2026 Эксклюзивная недвижимость в Мысхако</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8; font-size: 0.9rem;">
+                Прямая продажа от собственника. Без посредников.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Плавающая кнопка звонка -->
+    <a href="tel:+7XXXXXXXXXX" class="floating-phone" data-dmp-event="floating_phone">📞</a>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Фотография</h3>
+            <p id="modalText" style="color: var(--text-light); font-size: 1.2rem;">Здесь будет фото</p>
+            <p style="margin: 1.5rem 0; color: var(--text-muted); font-style: italic;">
+                💡 Замените на реальное изображение
+            </p>
+            <button class="modal-close" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script>
+        // Маска для телефона
+        const phoneInput = document.getElementById('phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 0) {
+                    if (value[0] === '7' || value[0] === '8') {
+                        value = value.substring(1);
+                    }
+                    let formattedValue = '+7';
+                    if (value.length > 0) {
+                        formattedValue += ' (' + value.substring(0, 3);
+                    }
+                    if (value.length >= 3) {
+                        formattedValue += ') ' + value.substring(3, 6);
+                    }
+                    if (value.length >= 6) {
+                        formattedValue += '-' + value.substring(6, 8);
+                    }
+                    if (value.length >= 8) {
+                        formattedValue += '-' + value.substring(8, 10);
+                    }
+                    e.target.value = formattedValue;
+                }
+            });
+        }
+
+        // Обработка формы
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            console.log('Form submitted:', data);
+            
+            alert('Спасибо за заявку! Я свяжусь с вами в ближайшее время для организации показа.');
+            this.reset();
+        });
+
+        // Модальное окно
+        function openModal(photoName) {
+            document.getElementById('modalText').textContent = photoName;
+            document.getElementById('modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Отслеживание кликов для DMP.one
+        document.querySelectorAll('[data-dmp-event]').forEach(element => {
+            element.addEventListener('click', function() {
+                const eventName = this.getAttribute('data-dmp-event');
+                console.log('DMP event:', eventName);
+            });
+        });
+
+        // Плавающая кнопка
+        let lastScroll = 0;
+        const floatingPhone = document.querySelector('.floating-phone');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 500) {
+                floatingPhone.style.opacity = '1';
+                floatingPhone.style.visibility = 'visible';
+            } else {
+                floatingPhone.style.opacity = '0';
+                floatingPhone.style.visibility = 'hidden';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        floatingPhone.style.opacity = '0';
+        floatingPhone.style.visibility = 'hidden';
+    </script>
+
+</body>
+</html>
